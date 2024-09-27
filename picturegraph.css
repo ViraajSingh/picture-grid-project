@@ -1,0 +1,76 @@
+.navbar{
+  background-color: rgba(240, 129, 240, 0.219);
+  height: 30px;
+  
+}
+.navbar > a{
+    margin: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.box{
+    border:5px solid black
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: "logo logo logo logo facebook" 
+                        "logo logo logo logo twitter"
+                        "logo logo logo logo mask"
+                        "dad dad joker oldlady pink1"
+                        ". . . . ."
+                        ". . . . ."
+                        ". . . . ."
+                        ". . . . .";
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.facebook{
+    grid-area: facebook;
+}
+
+.twitter{
+    grid-area: twitter;
+}
+
+.mask{
+    grid-area: mask;
+}
+
+.dad{
+    grid-area: dad;
+}
+
+.joker{
+    grid-area: joker;
+}
+
+.oldlady{
+    grid-area: oldlady;
+}
+
+.pink1{
+    grid-area: pink1;
+}
+
+.musical{
+    grid-area: musical;
+}
+
+.astroboy{
+    grid-area: astroboy;
+}
+
+.candy{
+    grid-area: candy;
+}
+
+.hat{
+    grid-area: hat;
+}
