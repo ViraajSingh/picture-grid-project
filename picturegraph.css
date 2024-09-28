@@ -1,4 +1,4 @@
-.navbar{
+ .navbar{
   background-color: rgba(240, 129, 240, 0.219);
   height: 30px;
   
@@ -7,28 +7,37 @@
     margin: 20px;
     padding-left: 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.box{
+ .box{
     border:5px solid black
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:  100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: "logo logo logo logo facebook" 
-                        "logo logo logo logo twitter"
-                        "logo logo logo logo mask"
-                        "dad dad joker oldlady pink1"
-                        ". . . . ."
-                        ". . . . ."
-                        ". . . . ."
-                        ". . . . .";
+                         "logo logo logo logo twitter" 
+                         "logo logo logo logo mask" 
+                         "dad dad joker oldlady lady" 
+                         "musical astroboy astroboy candy hat"
+                         "musical santa classic classic shipping"
+                         "prop santa ween1 ween2 witch"
+                         "blackmask rain rain . ady"
+                         ; 
+                        
 }
+
+/* img {
+    width: 100%;
+    height: 100%;
+} */
 
 .logo{
     grid-area: logo;
+
 }
 
 .facebook{
@@ -41,6 +50,7 @@
 
 .mask{
     grid-area: mask;
+    align-content: stretch;
 }
 
 .dad{
@@ -55,8 +65,9 @@
     grid-area: oldlady;
 }
 
-.pink1{
-    grid-area: pink1;
+.lady{
+    grid-area: lady;
+
 }
 
 .musical{
@@ -73,4 +84,38 @@
 
 .hat{
     grid-area: hat;
+}
+.prop{
+    grid-area: prop;
+}
+.santa{
+    grid-area: santa;
+}
+
+.classic{
+    grid-area:classic;
+}
+
+.shipping{
+    grid-area: shipping;
+}
+
+.ween1{
+    grid-area: ween1;
+}
+
+.ween2{
+    grid-area: ween2;
+}
+
+.blackmask{
+    grid-area: blackmask;
+}
+
+.rain{
+    grid-area: rain;
+}
+
+.ady{
+    grid-area: ady;
 }
