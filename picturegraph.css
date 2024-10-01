@@ -11,10 +11,13 @@
 }
 
  .box{
-    border:5px solid black
+    /* border:5px solid transparent; */
+    display: flex;
 }
 
 .container{
+    gap: 10px;
+    border: solid gray;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -25,15 +28,13 @@
                          "musical astroboy astroboy candy hat"
                          "musical santa classic classic shipping"
                          "prop santa ween1 ween2 witch"
-                         "blackmask rain rain . ady"
-                         ; 
-                        
+                         "blackmask rain rain . ady";                      
 }
 
-/* img {
+.container >div > img{
+    object-fit: fill;
     width: 100%;
-    height: 100%;
-} */
+}
 
 .logo{
     grid-area: logo;
@@ -50,7 +51,7 @@
 
 .mask{
     grid-area: mask;
-    align-content: stretch;
+    
 }
 
 .dad{
@@ -117,5 +118,12 @@
 }
 
 .ady{
+    font-weight: bold;
+    font-size: large;
     grid-area: ady;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
+    color:rgba(255, 0, 0, 0.34);
+    display: flex;
 }
